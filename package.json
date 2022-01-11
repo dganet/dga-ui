@@ -1,6 +1,6 @@
 {
-    "name": "react-martins-component-library",
-    "version": "0.1.55",
+    "name": "dga-ui",
+    "version": "0.0.1",
     "main": "build/index.js",
     "types": "build/src/index.d.ts",
     "repository": {
