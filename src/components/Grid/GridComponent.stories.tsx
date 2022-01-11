@@ -9,7 +9,7 @@ export default {
 }
 
 export const Default = () => (
-    <Grid colGap={15} rowGap={10}>
+    <Grid colGap={50} rowGap={100}>
         <Row>
             <Col xs={12} sm={12} md={12} lg={12} xl={12}>
                 <CardComponent cardType="border">asdfasdf</CardComponent>
@@ -24,6 +24,11 @@ export const Default = () => (
             </Col>
             <Col xs={12} sm={12} md={12} lg={3} xl={4}>
                 <CardComponent cardType="border">Col 3/3</CardComponent>
+            </Col>
+        </Row>
+        <Row centralize>
+            <Col xs={12} sm={12} md={12} lg={3} xl={4}>
+                a;lsdkjf;alksdjf
             </Col>
         </Row>
     </Grid>

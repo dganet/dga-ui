@@ -8,11 +8,18 @@ export type GridProps = {
     children: ReactNode
 }
 
-export type RowStyleProps ={
-    gap?: number
-}
 
 export type RowProps = {
+    centralize?: boolean;
+    children: ReactNode;
+}
+
+export type RowStyleProps ={
+    gap?: number
+    centralize: boolean
+}
+
+export type ColProps = {
     xl?: GridSize
     lg?: GridSize
     md?: GridSize

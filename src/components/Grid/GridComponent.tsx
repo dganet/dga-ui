@@ -2,7 +2,7 @@ import { GridProvider, useGrid } from '@hooks/useGrid/GridProvider'
 import React, { useEffect } from 'react'
 
 import { Container, StyledRow, StyledCol } from './GridComponent.styles'
-import { GridProps, RowProps } from './GridComponent.types'
+import { ColProps, GridProps, RowProps } from './GridComponent.types'
 
 const Grid = ({ colGap, rowGap, children }: GridProps) => {
     return (
@@ -25,12 +25,16 @@ const GridComponent = ({ colGap, rowGap, children }: GridProps) => {
     return <Container>{children}</Container>
 }
 
-const Row: React.FC = ({ children }) => {
+const Row: React.FC<RowProps> = ({ children, centralize }) => {
     const { rowGap } = useGrid()
-    return <StyledRow gap={rowGap}>{children}</StyledRow>
+    return (
+        <StyledRow centralize={centralize} gap={rowGap}>
+            {children}
+        </StyledRow>
+    )
 }
 
-const Col: React.FC<RowProps> = ({ children, lg, md, xl, sm, xs }) => {
+const Col: React.FC<ColProps> = ({ children, lg, md, xl, sm, xs }) => {
     const { colGap } = useGrid()
     return (
         <StyledCol gap={colGap} xs={xs} sm={sm} md={md} lg={lg} xl={xl}>
