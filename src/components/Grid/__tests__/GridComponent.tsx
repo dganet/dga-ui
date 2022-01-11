@@ -1,13 +1,17 @@
 import { render, screen } from '../../../lib/test-utils'
 
-import GridComponent from '../GridComponent'
+import { Col, Grid, Row } from '../GridComponent'
 
 describe('<GridComponent />', () => {
-  it('should render the component', () => {
-    const { container } = render(<GridComponent />)
+    it('should render the component', () => {
+        const { container } = render(
+            <Grid>
+                <Row>
+                    <Col></Col>
+                </Row>
+            </Grid>
+        )
 
-    expect(screen.getByRole('heading', { name: /Grid/i })).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
-  })
+        expect(container.firstChild).toMatchSnapshot()
+    })
 })

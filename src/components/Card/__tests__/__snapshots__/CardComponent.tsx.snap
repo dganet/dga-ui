@@ -2,11 +2,12 @@
 
 exports[`<CardComponent /> should render the component 1`] = `
 <div
-  class="sc-bdfBQB"
+  class="sc-bdfBQB gUgAPw"
 >
-  <h1>
-    Card - 
-    new component
-  </h1>
+  <div
+    class="sc-gsTEea"
+  >
+    test
+  </div>
 </div>
 `;

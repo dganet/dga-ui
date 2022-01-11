@@ -2,11 +2,14 @@
 
 exports[`<GridComponent /> should render the component 1`] = `
 <div
-  class="sc-bdfBQB"
+  class="sc-bdfBQB cFiHbF"
 >
-  <h1>
-    Grid - 
-    new component
-  </h1>
+  <div
+    class="sc-gsTEea fkZMYP"
+  >
+    <div
+      class="sc-dlfnuX doHzew"
+    />
+  </div>
 </div>
 `;
