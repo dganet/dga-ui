@@ -8,8 +8,8 @@ const ButtonComponent: React.FC<ButtonProps> = ({
     children,
     buttonSize = 'large',
     buttonType = 'primary',
-    onlyIcon = false,
-    icon: Icon
+    icon: Icon,
+    ...props
 }) => {
     const theme = useTheme()
     return (
@@ -18,6 +18,7 @@ const ButtonComponent: React.FC<ButtonProps> = ({
             buttonSize={buttonSize}
             buttonType={buttonType}
             onlyIcon={!!!children}
+            {...props}
         >
             {Icon && <Icon />} <label>{children}</label>
         </Container>

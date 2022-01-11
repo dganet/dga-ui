@@ -10,7 +10,6 @@ export const Container = styled.div<Omit<CardProps, 'cardTitle' | 'children'>>`
     border-radius: 6px;
     padding: 28px;
     font-family: inherit;
-    font-size:
 
     ${props => props.cardType === 'shadow' && css`
         background: #FFFFFF;
