@@ -22,7 +22,7 @@ export const Container = styled.div<Omit<CardProps, 'cardTitle' | 'children'>>`
     `}
     ${props => props.cardType === 'border-shadow' && css`
         background: #FFFFFF;
-        border: 1px solid #D7DBEC;
+        border: 1px solid ${props => props.theme.colors.general['50']};
         box-shadow: 0 2px 6px 0 ${props => props.theme.colors.shadow};
     `}
 `;

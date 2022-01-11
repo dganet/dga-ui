@@ -4,6 +4,7 @@ export const defaultTheme: DefaultTheme = {
     name: 'default',
     colors: {
         shadow:"rgba(21,34,50,0.08)",
+        white: "#FFF",
         general: {
             100: '#131523',
             90: '#333752',
@@ -87,7 +88,7 @@ export const defaultTheme: DefaultTheme = {
         paragraph: '14px',
     },
     fontFamily: {
-        Regular: "Inter-Regular",
+        Regular: "Inter",
         medium: "Inter-Medium",
         semiBold: "Inter-SemiBold",
         bold: "Inter-Bold",

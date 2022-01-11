@@ -2,6 +2,7 @@ import 'styled-components'
 
 interface Colors{
     shadow: string,
+    white: string,
     general: {
         [key: string]: string
     }

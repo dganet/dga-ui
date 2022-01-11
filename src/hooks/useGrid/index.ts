@@ -1,1 +1,1 @@
-export { CustomThemeProvider, useTheme } from './ThemeContext'
+export { GridProvider, useGrid } from './GridProvider'
