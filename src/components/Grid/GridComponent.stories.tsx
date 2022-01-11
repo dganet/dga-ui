@@ -9,14 +9,14 @@ export default {
 }
 
 export const Default = () => (
-    <Grid colGap={50} rowGap={100}>
+    <Grid>
         <Row>
             <Col xs={12} sm={12} md={12} lg={12} xl={12}>
                 <CardComponent cardType="border">asdfasdf</CardComponent>
             </Col>
         </Row>
         <Row>
-            <Col xs={12} sm={12} md={12} lg={6} xl={4}>
+            <Col xs={12} sm={12} md={12} lg={7} xl={4}>
                 <CardComponent cardType="border">Col 1/3</CardComponent>
             </Col>
             <Col xs={12} sm={12} md={12} lg={3} xl={4}>
@@ -28,7 +28,9 @@ export const Default = () => (
         </Row>
         <Row centralize>
             <Col xs={12} sm={12} md={12} lg={3} xl={4}>
-                a;lsdkjf;alksdjf
+                <CardComponent cardType="border">
+                    <input type="text" />
+                </CardComponent>
             </Col>
         </Row>
     </Grid>

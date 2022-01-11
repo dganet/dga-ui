@@ -13,10 +13,12 @@ const inputSize ={
         height: 36px;
     `,
 }
+
 export const Container = styled.div<Omit<InputProps, 'label'>>`
     display: flex;
     flex-direction: column;
 `
+
 export const InputLabel = styled.label`
     margin-bottom: 4px;
     font-style: normal;

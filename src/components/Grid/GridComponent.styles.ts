@@ -11,10 +11,10 @@ export const StyledRow = styled.div<RowStyleProps>`
     display: flex;
     flex-flow: row wrap;
 
+    ${props => props.centralize && css`
+        justify-content: center;
+    ` }
     ${props => props.gap && css`
-        ${props.centralize && css`
-            justify-content: center;
-        ` }
         &+& {
             margin-top: ${props.gap}px;
         }
@@ -22,11 +22,9 @@ export const StyledRow = styled.div<RowStyleProps>`
 `
 
 export const StyledCol = styled.div<ColStyleProps>`
-    background-color: yellow;
 
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
-        background-color: red;
         ${props => css`
             ${ (props.xs * colSize) > 95 ?
                 css`
@@ -44,7 +42,6 @@ export const StyledCol = styled.div<ColStyleProps>`
     }
     /* Small devices (portrait tablets and large phones, 600px and up) */
      @media only screen and (min-width: 600px) {
-        background-color: yellow;
         ${props => css`
             ${ (props.sm * colSize) > 95 ?
                 css`
@@ -62,7 +59,6 @@ export const StyledCol = styled.div<ColStyleProps>`
      }
     /* Medium devices (landscape tablets, 768px and up) */
     @media screen and (min-width: 768px) {
-        background-color: green;
         ${props => css`
             ${ (props.md * colSize) > 95 ?
                 css`
@@ -80,7 +76,6 @@ export const StyledCol = styled.div<ColStyleProps>`
     }
     /* Large devices (laptops/desktops, 992px and up) */
     @media screen and (min-width: 992px) {
-        background-color: blue;
         ${props => css`
             ${ (props.lg * colSize) > 95 ?
                 css`
@@ -98,7 +93,6 @@ export const StyledCol = styled.div<ColStyleProps>`
     }
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media screen and (min-width: 1200px) {
-        background-color: gray;
         ${props => css`
             ${ (props.xl * colSize) > 95 ?
                 css`
