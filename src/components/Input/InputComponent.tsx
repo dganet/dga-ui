@@ -16,6 +16,7 @@ const InputComponent = ({
     inputType = 'regular',
     inputIconSide = 'left',
     icon: Icon = null,
+    error = false,
     ...props
 }: InputProps) => {
     const theme = useTheme()
@@ -37,6 +38,7 @@ const InputComponent = ({
                 theme={theme}
                 inputSize={inputSize}
                 inputType={inputType}
+                error={error}
             >
                 {inputType === 'number' ? (
                     <>
@@ -58,11 +60,11 @@ const InputComponent = ({
                     </>
                 ) : (
                     <>
-                        {inputIconSide === 'left' && (
+                        {inputIconSide === 'left' && Icon && (
                             <Icon style={{ marginRight: '8px' }} />
                         )}
                         <StyledInput theme={theme} type="text" {...props} />
-                        {inputIconSide === 'right' && <Icon />}
+                        {inputIconSide === 'right' && Icon && <Icon />}
                     </>
                 )}
             </InputContainer>

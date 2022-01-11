@@ -5,12 +5,15 @@ import { InputProps } from './InputComponent.types'
 const inputSize ={
     'large': css`
         height: 48px ;
+        padding: 12px 16px;
     `,
     'medium': css`
         height: 40px ;
+        padding: 8px 16px;
     `,
     'small': css`
         height: 36px;
+        padding: 8px 16px;
     `,
 }
 
@@ -39,7 +42,7 @@ export const InputContainer = styled.div<Omit<InputProps, 'label'>>`
     ${props => inputSize[props.inputSize]}
     border: solid 1px ${props => props.theme.colors.general[50]};
     border-radius: 4px;
-    padding: 8px 16px;
+
     font-family: ${props => props.theme.fontFamily.Regular};
     ${props => props.inputType === 'number' &&
     css`
@@ -47,23 +50,41 @@ export const InputContainer = styled.div<Omit<InputProps, 'label'>>`
         padding: 12px;
     `
     }
+    svg{
+
+        height: 23px;
+        width: 23px;
+    }
+    :hover{
+        border-color: ${props => props.theme.colors.general[60]};
+    }
+    :active{
+        border-color: ${props => props.theme.colors.primary[100]};
+    }
+    :focus{
+        border: 4px solid ${props => props.theme.colors.primary[40]};
+    }
+    ${props => props.error && css`
+        border-color: ${props.theme.colors.danger[100]};
+    `}
 `
 
 export const StyledInput = styled.input<Omit<InputProps, 'label'>>`
     outline: none;
     border-style: none;
     height: 100%;
-    font-size: 16px;
+    font-size: ${props => props.inputSize === 'small' ? '14px' : '16px'};
     line-height: 24px;
     ${props => props.inputType}
-    color: ${props => props.theme.colors.general[80]};
+    color: ${props => props.theme.colors.general[100]};
     ${props => props.inputType === 'number' ? css`
         width: 48px;
     `: css`
-        width: 100%;
+        width: 100%;Kxnur9*ObzMW
     `}
     ::placeholder{
-        color: ${props => props.theme.colors.general[50]};
+        color: ${props => props.theme.colors.general[60]};
+        font-size: ${props => props.inputSize === 'small' ? '14px' : '16px'};
     }
 
 `

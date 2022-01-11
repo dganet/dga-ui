@@ -17,3 +17,5 @@ export const Default = () => (
 )
 
 export const Number = () => <InputComponent label="number" inputType="number" />
+
+export const Error = () => <InputComponent label="error" error />

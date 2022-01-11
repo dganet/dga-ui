@@ -7,4 +7,6 @@ export interface  InputProps extends InputHTMLAttributes<HTMLInputElement> {
     inputType?: "regular"|"icon"|"media" | "number"
     inputIconSide?: "left" | "right"
     icon?: IconType
+    error?: boolean
+    success?: boolean
 }
