@@ -47,5 +47,11 @@ declare module 'styled-components' {
         colors: Colors
         breakpoints: Breakpoints
         typography: Typography
+        fontFamily: {
+            Regular: string,
+            medium: string,
+            semiBold:string,
+            bold: string,
+        }
     }
 }

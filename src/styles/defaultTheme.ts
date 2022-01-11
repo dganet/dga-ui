@@ -85,5 +85,12 @@ export const defaultTheme: DefaultTheme = {
             lg: '24px'
         },
         paragraph: '14px',
+    },
+    fontFamily: {
+        Regular: "Inter-Regular",
+        medium: "Inter-Medium",
+        semiBold: "Inter-SemiBold",
+        bold: "Inter-Bold",
     }
+
 }
