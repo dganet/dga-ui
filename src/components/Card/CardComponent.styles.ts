@@ -25,6 +25,3 @@ export const Container = styled.div<Omit<CardProps, 'cardTitle' | 'children'>>`
         box-shadow: 0 2px 6px 0 ${props => props.theme.colors.shadow};
     `}
 `;
-
-
-export const CardBody = styled.div``;

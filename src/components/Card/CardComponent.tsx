@@ -8,7 +8,7 @@ const CardComponent = ({ children, cardType }: CardProps) => {
     const theme = useTheme()
     return (
         <Container theme={theme} cardType={cardType}>
-            <CardBody>{children}</CardBody>
+            {children}
         </Container>
     )
 }

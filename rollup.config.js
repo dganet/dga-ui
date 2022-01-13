@@ -26,8 +26,8 @@ export default {
             summaryOnly: true
         }),
         terser(),
-        resolve(),
+        resolve({preferBuiltins: false}),
         commonjs(),
-        typescript({ useTsconfigDeclarationDir: true })
+        typescript({  useTsconfigDeclarationDir: true })
     ]
 }
