@@ -1,3 +1,4 @@
+import ToastComponent from '@components/ToastContainer/ToastComponent'
 import React, { useCallback, useState } from 'react'
 import { uuid } from 'uuidv4'
 
@@ -38,7 +39,7 @@ const ToastProvider: React.FC = ({ children }) => {
     return (
         <toastContext.Provider value={{ removeToast, addToast }}>
             {children}
-            {/* <ToastContainer messages={messages} /> */}
+            <ToastComponent messages={messages} />
         </toastContext.Provider>
     )
 }

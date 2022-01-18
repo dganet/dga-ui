@@ -89,11 +89,13 @@ const useForm = <F,>(props: useFormProps<F>): useFormReturnType<F> => {
             }
         }
         //if the form was submitted validatefields
-        if (formStatus === FormStatus.SUBMITTED) validateFields()
+        if (formStatus === FormStatus.SUBMITTING) validateFields()
     }, [fields, formStatus])
 
     const onFormSubmit: OnFormSubmit<F> = callback => async e => {
+        setFormStatus(FormStatus.SUBMITTING)
         callback(fields, e)
+        setFormStatus(FormStatus.SUBMITTED)
     }
 
     return {
