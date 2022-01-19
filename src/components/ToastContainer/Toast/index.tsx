@@ -4,6 +4,7 @@ import { useToast } from '../../../hooks/useToast'
 import { Container } from './styles'
 import { ToastMessages } from '@hooks/useToast/ToastContext'
 import { AiOutlineClose } from 'react-icons/ai'
+import { ToastTypes } from '../ToastComponent.types'
 interface ToastProsp {
     toast: ToastMessages
     style?: object

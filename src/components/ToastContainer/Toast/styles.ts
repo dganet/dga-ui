@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components'
 import { animated } from 'react-spring'
+import { ToastStyled } from '../ToastComponent.types'
 
-const ToastTypes = {
+const ToastStyledTypes = {
     success: css`
         background-color: ${props => props.theme.colors.success[100]};
         color: ${props => props.theme.colors.white};
@@ -36,11 +37,9 @@ const ToastTypes = {
     `
 }
 
-interface ContainerProps {
-    toastType: 'info'| 'lightInfo' | 'success' | 'lightSuccess' | 'warning' | 'lightWarning' | 'error' | 'lightError';
-}
 
-export const Container = styled(animated.div)<ContainerProps>`
+
+export const Container = styled(animated.div)<ToastStyled>`
     padding: 0 18px;
     position: relative;
     border-radius: 4px;
@@ -51,7 +50,7 @@ export const Container = styled(animated.div)<ContainerProps>`
     justify-content: space-between;
     height: 48px;
     min-width: 327px;
-    ${props => ToastTypes[props.toastType]};
+    ${props => ToastStyledTypes[props.toastType]};
 
     & + div {
         margin-top: 8px;

@@ -1,40 +1,40 @@
 Arguments: 
-  /Users/guilhermebrito/.nvm/versions/node/v16.13.0/bin/node /Users/guilhermebrito/.nvm/versions/node/v16.13.0/bin/yarn publish
+  C:\Program Files (x86)\nodejs\node.exe C:\Users\Lygia Brito\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js publish
 
 PATH: 
-  /Users/guilhermebrito/.nvm/versions/node/v16.13.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Users/guilhermebrito/.nvm/versions/node/v16.13.0/bin:/Users/guilhermebrito/.local/share/zinit/polaris/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/guilhermebrito/development/flutter/bin:/Users/guilhermebrito/development/flutter/bin
+  C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\nodejs\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\Lygia Brito\AppData\Local\Microsoft\WindowsApps;C:\Users\Lygia Brito\AppData\Local\Programs\Microsoft VS Code\bin;C:\cygwin64\bin;C:\Users\Lygia Brito\AppData\Roaming\npm;C:\Users\Lygia Brito\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Users\Lygia Brito\.dotnet\tools;C:\Users\Lygia Brito\AppData\Local\GitHubDesktop\bin
 
 Yarn version: 
   1.22.17
 
 Node version: 
-  16.13.0
+  14.17.0
 
 Platform: 
-  darwin arm64
+  win32 ia32
 
 Trace: 
   Error: https://registry.yarnpkg.com/-/user/org.couchdb.user:guilbritto: failed to authenticate: Could not authenticate guilbritto: bad password
-      at Request.params.callback [as _callback] (/Users/guilhermebrito/.nvm/versions/node/v16.13.0/lib/node_modules/yarn/lib/cli.js:67029:18)
-      at Request.self.callback (/Users/guilhermebrito/.nvm/versions/node/v16.13.0/lib/node_modules/yarn/lib/cli.js:140883:22)
-      at Request.emit (node:events:390:28)
-      at Request.<anonymous> (/Users/guilhermebrito/.nvm/versions/node/v16.13.0/lib/node_modules/yarn/lib/cli.js:141855:10)
-      at Request.emit (node:events:390:28)
-      at IncomingMessage.<anonymous> (/Users/guilhermebrito/.nvm/versions/node/v16.13.0/lib/node_modules/yarn/lib/cli.js:141777:12)
-      at Object.onceWrapper (node:events:509:28)
-      at IncomingMessage.emit (node:events:402:35)
-      at endReadableNT (node:internal/streams/readable:1343:12)
-      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+      at Request.params.callback [as _callback] (C:\Users\Lygia Brito\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:67029:18)
+      at Request.self.callback (C:\Users\Lygia Brito\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140883:22)
+      at Request.emit (events.js:376:20)
+      at Request.<anonymous> (C:\Users\Lygia Brito\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141855:10)
+      at Request.emit (events.js:376:20)
+      at IncomingMessage.<anonymous> (C:\Users\Lygia Brito\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141777:12)
+      at Object.onceWrapper (events.js:482:28)
+      at IncomingMessage.emit (events.js:388:22)
+      at endReadableNT (internal/streams/readable.js:1336:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
 
 npm manifest: 
   {
-      "name": "react-martins-component-library",
-      "version": "0.1.50",
+      "name": "dga-ui",
+      "version": "0.0.13",
       "main": "build/index.js",
       "types": "build/src/index.d.ts",
       "repository": {
           "type": "git",
-          "url": "https://github.com/Guilbritto/react-martins-component-library"
+          "url": "https://github.com/dganet/dga-ui"
       },
       "license": "MIT",
       "module": "build/index.es.js",
@@ -103,6 +103,7 @@ npm manifest:
           "storybook-addon-styled-components-themes": "^0.0.2",
           "ts-jest": "^27.0.5",
           "ts-node": "^10.2.1",
+          "tsconfig-paths": "^3.12.0",
           "typescript": "^4.4.3",
           "yup": "^0.32.9"
       },
@@ -3124,6 +3125,11 @@ Lockfile:
     version "7.0.9"
     resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.9.tgz#97edc9037ea0c38585320b28964dde3b39e4660d"
     integrity sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==
+  
+  "@types/json5@^0.0.29":
+    version "0.0.29"
+    resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
+    integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
   
   "@types/liftoff@^2.5.0":
     version "2.5.1"
@@ -12012,6 +12018,11 @@ Lockfile:
     dependencies:
       ansi-regex "^4.1.0"
   
+  strip-bom@^3.0.0:
+    version "3.0.0"
+    resolved "https://registry.yarnpkg.com/strip-bom/-/strip-bom-3.0.0.tgz#2334c18e9c759f7bdd56fdef7e9ae3d588e68ed3"
+    integrity sha1-IzTBjpx1n3vdVv3vfprj1YjmjtM=
+  
   strip-bom@^4.0.0:
     version "4.0.0"
     resolved "https://registry.yarnpkg.com/strip-bom/-/strip-bom-4.0.0.tgz#9c3505c1db45bcedca3d9cf7a16f5c5aa3901878"
@@ -12472,6 +12483,16 @@ Lockfile:
     version "1.2.0"
     resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
     integrity sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==
+  
+  tsconfig-paths@^3.12.0:
+    version "3.12.0"
+    resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.12.0.tgz#19769aca6ee8f6a1a341e38c8fa45dd9fb18899b"
+    integrity sha512-e5adrnOYT6zqVnWqZu7i/BQ3BnhzvGbjEjejFXO20lKIKpwTaupkCPgEfv4GZK1IBciJUEhYs3J3p75FdaTFVg==
+    dependencies:
+      "@types/json5" "^0.0.29"
+      json5 "^1.0.1"
+      minimist "^1.2.0"
+      strip-bom "^3.0.0"
   
   tslib@2.1.0:
     version "2.1.0"
