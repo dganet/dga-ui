@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Input from '../Input/InputComponent'
 import CardComponent from './CardComponent'
 
 export default {
@@ -9,7 +9,7 @@ export default {
 
 export const Default = () => (
     <CardComponent cardType="white">
-        <h1>asdfasdf</h1>
+        <Input placeholder="Search" />
     </CardComponent>
 )
 export const Shadow = () => (

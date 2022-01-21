@@ -2,10 +2,6 @@ import styled, { css } from 'styled-components'
 import { CardProps } from './CardComponent.types';
 
 export const Container = styled.div<Omit<CardProps, 'cardTitle' | 'children'>>`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
     width: 'auto';
     border-radius: 6px;
     padding: 28px;

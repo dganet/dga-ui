@@ -77,10 +77,11 @@ export const StyledInput = styled.input<Omit<InputProps, 'label'>>`
     line-height: 24px;
     ${props => props.inputType}
     color: ${props => props.theme.colors.general[100]};
+    background-color: transparent;
     ${props => props.inputType === 'number' ? css`
         width: 48px;
     `: css`
-        width: 100%;Kxnur9*ObzMW
+        width: 100%;
     `}
     ::placeholder{
         color: ${props => props.theme.colors.general[60]};

@@ -13,7 +13,7 @@ exports[`<InputComponent /> should render the component 1`] = `
     class="sc-dlfnuX bkBHeL"
   >
     <input
-      class="sc-hKgJUU cSydUb"
+      class="sc-hKgJUU jDWNII"
       type="text"
     />
   </div>

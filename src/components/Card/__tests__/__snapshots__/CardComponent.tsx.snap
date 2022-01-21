@@ -2,12 +2,8 @@
 
 exports[`<CardComponent /> should render the component 1`] = `
 <div
-  class="sc-bdfBQB gUgAPw"
+  class="sc-bdfBQB ccoSRg"
 >
-  <div
-    class="sc-gsTEea"
-  >
-    test
-  </div>
+  test
 </div>
 `;
