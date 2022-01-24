@@ -9,6 +9,9 @@ export default {
 
 export const Default = () => (
     <DatagridComponent
+        defaultPage={1}
+        pageAmount={10}
+        amountRegister={100}
         data={{
             header: [
                 {

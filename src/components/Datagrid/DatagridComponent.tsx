@@ -4,16 +4,25 @@ import Table, {
     TableHeader,
     TableHeaderItem,
     TableRow,
-    TableRowItem
+    TableRowItem,
+    TableFooter
 } from '@components/Table/TableComponent'
 
 import { DatagridProps } from './DatagridComponent.types'
+import PaginationComponent from '@components/Pagination/PaginationComponent'
+import { useTheme } from '@hooks/useTheme'
+import { AmounRegisters } from './DatagridComponent.styles'
 
 const DatagridComponent = ({
     data,
     tableSize = 'small',
-    tableType = 'light'
+    tableType = 'light',
+    onChangePage,
+    pageAmount,
+    defaultPage,
+    amountRegister
 }: DatagridProps) => {
+    const theme = useTheme()
     return (
         <Table tableSize={tableSize} tableType={tableType}>
             <TableHeader>
@@ -39,6 +48,16 @@ const DatagridComponent = ({
                     </TableRow>
                 ))}
             </TableBody>
+            <TableFooter>
+                <PaginationComponent
+                    defaultPage={defaultPage}
+                    onChange={onChangePage}
+                    count={pageAmount}
+                />
+                <AmounRegisters theme={theme}>
+                    {amountRegister} registros
+                </AmounRegisters>
+            </TableFooter>
         </Table>
     )
 }

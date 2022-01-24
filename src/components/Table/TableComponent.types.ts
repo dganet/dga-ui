@@ -16,3 +16,4 @@ export type TableHeaderStyledProps = {
 export type TableHeaderItemStyledProps = {
     width?: number
 }
+

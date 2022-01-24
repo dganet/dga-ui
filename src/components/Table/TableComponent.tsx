@@ -8,7 +8,8 @@ import {
     TableHeaderItemStyled,
     TableBodyStyled,
     TableRowStyled,
-    TableRowItemStyled
+    TableRowItemStyled,
+    TableFooterStyled
 } from './TableComponent.styles'
 import { TableHeaderItemStyledProps, TableProps } from './TableComponent.types'
 
@@ -84,4 +85,8 @@ export const TableRowItem: React.FC<TableHeaderItemStyledProps> = ({
     )
 }
 
+export const TableFooter: React.FC = ({ children }) => {
+    const theme = useTheme()
+    return <TableFooterStyled theme={theme}>{children}</TableFooterStyled>
+}
 export default Table
