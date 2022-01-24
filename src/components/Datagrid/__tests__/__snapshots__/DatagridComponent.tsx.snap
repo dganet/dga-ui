@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DatagridComponent /> should render the component 1`] = `
+<div
+  class="sc-bdfBQB"
+>
+  <h1>
+    Datagrid - 
+    new component
+  </h1>
+</div>
+`;

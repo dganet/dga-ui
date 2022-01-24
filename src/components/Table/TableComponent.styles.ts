@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { TableHeaderStyledProps, TableRowStyledProps } from "./TableComponent.types";
+import { TableHeaderItemStyledProps, TableHeaderStyledProps, TableRowStyledProps } from "./TableComponent.types";
 
 
 const tableSize = {
@@ -48,7 +48,7 @@ export const Container = styled.div`
     width: 100%;
 `
 
-export const TableHeader = styled.div<TableHeaderStyledProps>`
+export const TableHeaderStyled = styled.div<TableHeaderStyledProps>`
     display: flex;
     width: 100%;
     box-sizing: border-box;
@@ -56,21 +56,18 @@ export const TableHeader = styled.div<TableHeaderStyledProps>`
     ${props => tableHeaderType[props.tableType]}
 `
 
-export const TableHeaderItem = styled.div`
+export const TableHeaderItemStyled = styled.div<TableHeaderItemStyledProps>`
     display:flex;
     justify-content: flex-start;
     align-items: center;
-    flex: 1;
-
-
+    width: ${props => props.width ? `${props.width}%`: '100%' };
 `
-
-export const TableBody = styled.div`
+export const TableBodyStyled = styled.div`
     display: flex;
     flex-direction: column;
 `
 
-export const TableRow = styled.div<TableRowStyledProps>`
+export const TableRowStyled = styled.div<TableRowStyledProps>`
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -79,6 +76,6 @@ export const TableRow = styled.div<TableRowStyledProps>`
     ${props => tableSize[props.tableSize]};
 `
 
-export const TableRowItem = styled.div`
-    flex: 1;
+export const TableRowItemStyled = styled.div<TableHeaderItemStyledProps>`
+    width: ${props => props.width ? `${props.width}%`: '100%' };
 `

@@ -1,7 +1,7 @@
-type TableSize =  'small' | 'medium' | 'large';
-type TableType = 'solid' | 'light';
+export type TableSize =  'small' | 'medium' | 'large';
+export type TableType = 'solid' | 'light';
 
-export type TableProps = {
+export interface TableProps {
     tableSize?: TableSize
     tableType?: TableType
 }
@@ -12,4 +12,7 @@ export type TableRowStyledProps = {
 
 export type TableHeaderStyledProps = {
     tableType?: TableType
+}
+export type TableHeaderItemStyledProps = {
+    width?: number
 }
