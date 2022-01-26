@@ -28,12 +28,20 @@ export const StyledCol = styled.div<ColStyleProps>`
         ${props => css`
             ${ (props.xs * colSize) > 95 ?
                 css`
-                    width: ${props.xs * colSize}%;
+                    ${props.xs ? css`
+                        width: ${props.xs * colSize}%;
+                    ` : css`
+                        flex: 1;
+                    `}
                     &+& {
                         margin-left: 0;
                     }` :
                 css`
-                    width: calc(${props.xs * colSize}% - ${props.gap}px);
+                    ${props.xs ? css`
+                        width: calc(${props.xs * colSize}% - ${props.gap}px);
+                    ` : css`
+                        flex: 1;
+                    `}
                     &+& {
                         margin-left: ${props.gap}px;
                     }`
@@ -45,12 +53,20 @@ export const StyledCol = styled.div<ColStyleProps>`
         ${props => css`
             ${ (props.sm * colSize) > 95 ?
                 css`
-                    width: ${props.sm * colSize}%;
+                    ${props.sm ? css`
+                        width: ${props.sm * colSize}%;
+                    ` : css`
+                        flex: 1;
+                    `}
                     &+& {
                         margin-left: 0;
                     }` :
                 css`
-                    width: calc(${props.sm * colSize}% - ${props.gap}px);
+                    ${props.sm ? css`
+                        width: calc(${props.sm * colSize}% - ${props.gap}px);
+                    ` : css`
+                        flex: 1;
+                    `}
                     &+& {
                         margin-left: ${props.gap}px;
                     }`
@@ -62,12 +78,20 @@ export const StyledCol = styled.div<ColStyleProps>`
         ${props => css`
             ${ (props.md * colSize) > 95 ?
                 css`
-                    width: ${props.md * colSize}%;
+                    ${props.md ? css`
+                        width: ${props.md * colSize}%;
+                    ` : css`
+                        flex: 1;
+                    `}
                     &+& {
                         margin-left: 0;
                     }` :
                 css`
-                    width: calc(${props.md * colSize}% - ${props.gap}px);
+                    ${props.md ? css`
+                        width: calc(${props.md * colSize}% - ${props.gap}px);
+                    ` : css`
+                        flex: 1;
+                    `}
                     &+& {
                         margin-left: ${props.gap}px;
                     }`
@@ -79,12 +103,20 @@ export const StyledCol = styled.div<ColStyleProps>`
         ${props => css`
             ${ (props.lg * colSize) > 95 ?
                 css`
-                    width: ${props.lg * colSize}%;
+                    ${props.lg ? css`
+                        width: ${props.lg * colSize}%;
+                    ` : css`
+                        flex: 1;
+                    `}
                     &+& {
                         margin-left: 0;
                     }` :
                 css`
-                    width: calc(${props.lg * colSize}% - ${props.gap}px);
+                    ${props.lg ? css`
+                        width: calc(${props.lg * colSize}% - ${props.gap}px);
+                    ` : css`
+                        flex: 1;
+                    `}
                     &+& {
                         margin-left: ${props.gap}px;
                     }`
@@ -96,12 +128,20 @@ export const StyledCol = styled.div<ColStyleProps>`
         ${props => css`
             ${ (props.xl * colSize) > 95 ?
                 css`
-                    width: ${props.xl * colSize}%;
+                    ${props.lg ? css`
+                        width: ${props.xl * colSize}%;
+                    ` : css`
+                        flex: 1;
+                    `}
                     &+& {
                         margin-left: 0;
                     }` :
                 css`
-                    width: calc(${props.xl * colSize}% - ${props.gap}px);
+                    ${props.lg ? css`
+                        width: calc(${props.xl * colSize}% - ${props.gap}px);
+                    ` : css`
+                        flex: 1;
+                    `}
                     &+& {
                         margin-left: ${props.gap}px;
                     }`
