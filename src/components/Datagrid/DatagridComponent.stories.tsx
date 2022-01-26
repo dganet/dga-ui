@@ -12,6 +12,7 @@ export const Default = () => (
         defaultPage={1}
         pageAmount={10}
         amountRegister={100}
+        rowClick={id => console.log(id)}
         data={{
             header: [
                 {
@@ -40,30 +41,66 @@ export const Default = () => (
                 }
             ],
             body: [
-                [
-                    { label: 'n1' },
-                    { label: 'n2' },
-                    { label: 'n3' },
-                    { label: 'n4' },
-                    { label: 'n5' },
-                    { label: 'n6' }
-                ],
-                [
-                    { label: 'n1' },
-                    { label: 'n2' },
-                    { label: 'n3' },
-                    { label: 'n4' },
-                    { label: 'n5' },
-                    { label: 'n6' }
-                ],
-                [
-                    { label: 'n1' },
-                    { label: 'n2' },
-                    { label: 'n3' },
-                    { label: 'n4' },
-                    { label: 'n5' },
-                    { label: 'n6' }
-                ]
+                {
+                    rowId: '1',
+                    items: [
+                        { label: 'teste' },
+                        { label: 'teste' },
+                        { label: 'teste' },
+                        { label: 'teste' },
+                        { label: 'teste' }
+                    ]
+                },
+                {
+                    rowId: '2',
+                    items: [
+                        { label: 'teste1' },
+                        { label: 'teste1' },
+                        { label: 'teste1' },
+                        { label: 'teste1' },
+                        { label: 'teste1' }
+                    ]
+                },
+                {
+                    rowId: '3',
+                    items: [
+                        { label: 'teste2' },
+                        { label: 'teste2' },
+                        { label: 'teste2' },
+                        { label: 'teste2' },
+                        { label: 'teste2' }
+                    ]
+                },
+                {
+                    rowId: '4',
+                    items: [
+                        { label: 'teste3' },
+                        { label: 'teste3' },
+                        { label: 'teste3' },
+                        { label: 'teste3' },
+                        { label: 'teste3' }
+                    ]
+                },
+                {
+                    rowId: '5',
+                    items: [
+                        { label: 'teste4' },
+                        { label: 'teste4' },
+                        { label: 'teste4' },
+                        { label: 'teste4' },
+                        { label: 'teste4' }
+                    ]
+                },
+                {
+                    rowId: '6',
+                    items: [
+                        { label: 'teste5' },
+                        { label: 'teste5' },
+                        { label: 'teste5' },
+                        { label: 'teste5' },
+                        { label: 'teste5' }
+                    ]
+                }
             ]
         }}
     />

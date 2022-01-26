@@ -11,7 +11,11 @@ import {
     TableRowItemStyled,
     TableFooterStyled
 } from './TableComponent.styles'
-import { TableHeaderItemStyledProps, TableProps } from './TableComponent.types'
+import {
+    TableHeaderItemStyledProps,
+    TableProps,
+    TableRowProps
+} from './TableComponent.types'
 
 const Table: React.FC<TableProps> = ({ children, ...rest }) => {
     return (
@@ -64,11 +68,15 @@ export const TableBody: React.FC = ({ children }) => {
     const theme = useTheme()
     return <TableBodyStyled theme={theme}>{children}</TableBodyStyled>
 }
-export const TableRow: React.FC = ({ children }) => {
+export const TableRow: React.FC<TableRowProps> = ({ children, rowClick }) => {
     const theme = useTheme()
     const { tableSize } = useTable()
     return (
-        <TableRowStyled theme={theme} tableSize={tableSize}>
+        <TableRowStyled
+            onClick={() => rowClick()}
+            theme={theme}
+            tableSize={tableSize}
+        >
             {children}
         </TableRowStyled>
     )

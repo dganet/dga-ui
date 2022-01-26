@@ -74,6 +74,10 @@ export const TableRowStyled = styled.div<TableRowStyledProps>`
     padding: 12px 24px;
     border-bottom: 1px solid ${props => props.theme.colors.general[40]};
     ${props => tableSize[props.tableSize]};
+    :hover{
+        background-color: ${props => props.theme.colors.general[30]};
+        cursor: pointer;
+    }
 `
 
 export const TableRowItemStyled = styled.div<TableHeaderItemStyledProps>`

@@ -20,9 +20,11 @@ const DatagridComponent = ({
     onChangePage,
     pageAmount,
     defaultPage,
-    amountRegister
+    amountRegister,
+    rowClick
 }: DatagridProps) => {
     const theme = useTheme()
+
     return (
         <Table tableSize={tableSize} tableType={tableType}>
             <TableHeader>
@@ -34,8 +36,8 @@ const DatagridComponent = ({
             </TableHeader>
             <TableBody>
                 {data.body.map((row, index) => (
-                    <TableRow key={index}>
-                        {row.map((item, index) => {
+                    <TableRow rowClick={() => rowClick(row.rowId)} key={index}>
+                        {row.items.map((item, index) => {
                             return (
                                 <TableRowItem
                                     key={index}

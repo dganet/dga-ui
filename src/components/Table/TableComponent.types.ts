@@ -16,4 +16,6 @@ export type TableHeaderStyledProps = {
 export type TableHeaderItemStyledProps = {
     width?: number
 }
-
+export type TableRowProps = {
+    rowClick?: () => void
+}
