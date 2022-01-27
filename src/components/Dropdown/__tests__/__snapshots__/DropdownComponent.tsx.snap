@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DropdownComponent /> should be able to click on component 1`] = `
+<span
+  class="sc-eCstlR dhneKu"
+/>
+`;
+
+exports[`<DropdownComponent /> should render the component 1`] = `
+<span
+  class="sc-eCstlR dhneKu"
+/>
+`;

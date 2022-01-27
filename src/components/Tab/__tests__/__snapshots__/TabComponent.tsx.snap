@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TabComponent /> Should be able to render 1 tabs and click in one tab 1`] = `
+<div
+  class="sc-hKgJUU jbwypO"
+  data-testid="tabCell"
+>
+  teste1
+</div>
+`;
+
+exports[`<TabComponent /> Should render the component 1`] = `
+<div
+  class="sc-bdfBQB dOljJr"
+>
+  <div
+    class="sc-dlfnuX eEZcei"
+  >
+    <div
+      class="sc-hKgJUU jbwypO"
+      data-testid="tabCell"
+    >
+      teste1
+    </div>
+    <div
+      class="sc-hKgJUU hAqUQc"
+      data-testid="tabCell"
+    >
+      teste2
+    </div>
+  </div>
+  <div
+    class="sc-gsTEea bKcjMs"
+  >
+    <div
+      class="sc-eCstlR jWqUGd"
+    >
+      Tab1
+    </div>
+    <div
+      class="sc-eCstlR gduWFM"
+    >
+      Tab2
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TabComponent /> Should render the component with invalid children 1`] = `
+<div
+  class="sc-bdfBQB dOljJr"
+>
+  <div
+    class="sc-dlfnuX eEZcei"
+  />
+  <div
+    class="sc-gsTEea bKcjMs"
+  >
+    Lorem
+  </div>
+</div>
+`;
