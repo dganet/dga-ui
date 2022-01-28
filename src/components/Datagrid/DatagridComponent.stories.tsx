@@ -16,90 +16,40 @@ export const Default = () => (
         data={{
             header: [
                 {
-                    label: '110',
-                    width: 110
-                },
-                {
-                    label: '80',
-                    width: 80
-                },
-                {
                     label: 'Name',
-                    width: 100
+                    width: 100,
+                    key: 'name'
                 },
                 {
-                    label: 'Name',
-                    width: 100
+                    label: 'Email',
+                    width: 100,
+                    key: 'email'
                 },
                 {
-                    label: 'Name',
-                    width: 100
+                    label: 'cpf',
+                    width: 100,
+                    key: 'cpf'
                 },
                 {
-                    label: 'Name',
-                    width: 100
+                    label: 'Telefone',
+                    width: 100,
+                    key: 'phone_number'
                 }
             ],
             body: [
                 {
-                    rowId: '1',
-                    items: [
-                        { label: 'teste' },
-                        { label: 'teste' },
-                        { label: 'teste' },
-                        { label: 'teste' },
-                        { label: 'teste' }
-                    ]
+                    email: 'mateus@mobilizebrasil.com',
+                    cpf: '7038636812',
+                    name: '',
+                    phone_number: '13996099753',
+                    id: '176a67a5-0cbb-4818-8ea9-c7c5faf324e8'
                 },
                 {
-                    rowId: '2',
-                    items: [
-                        { label: 'teste1' },
-                        { label: 'teste1' },
-                        { label: 'teste1' },
-                        { label: 'teste1' },
-                        { label: 'teste1' }
-                    ]
-                },
-                {
-                    rowId: '3',
-                    items: [
-                        { label: 'teste2' },
-                        { label: 'teste2' },
-                        { label: 'teste2' },
-                        { label: 'teste2' },
-                        { label: 'teste2' }
-                    ]
-                },
-                {
-                    rowId: '4',
-                    items: [
-                        { label: 'teste3' },
-                        { label: 'teste3' },
-                        { label: 'teste3' },
-                        { label: 'teste3' },
-                        { label: 'teste3' }
-                    ]
-                },
-                {
-                    rowId: '5',
-                    items: [
-                        { label: 'teste4' },
-                        { label: 'teste4' },
-                        { label: 'teste4' },
-                        { label: 'teste4' },
-                        { label: 'teste4' }
-                    ]
-                },
-                {
-                    rowId: '6',
-                    items: [
-                        { label: 'teste5' },
-                        { label: 'teste5' },
-                        { label: 'teste5' },
-                        { label: 'teste5' },
-                        { label: 'teste5' }
-                    ]
+                    email: 'claudiomsi@hotmail.com',
+                    name: 'ADRIANA SAMPAIO',
+                    cpf: '2543458832',
+                    phone_number: '13996099609',
+                    id: '80b510cd-c71e-4b8a-a0e8-0dcc15277f8d'
                 }
             ]
         }}

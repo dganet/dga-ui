@@ -36,16 +36,18 @@ const DatagridComponent = ({
             </TableHeader>
             <TableBody>
                 {data.body.map((row, index) => (
-                    <TableRow rowClick={() => rowClick(row.rowId)} key={index}>
-                        {row.items.map((item, index) => {
-                            return (
-                                <TableRowItem
-                                    key={index}
-                                    width={data.header[index]?.width}
-                                >
-                                    {item.label}
-                                </TableRowItem>
-                            )
+                    <TableRow rowClick={() => rowClick(row.id)} key={index}>
+                        {Object.keys(row).map((key, index) => {
+                            if (key !== 'id') {
+                                return (
+                                    <TableRowItem
+                                        key={index}
+                                        width={data.header[index]?.width}
+                                    >
+                                        {row[data.header[index].key]}
+                                    </TableRowItem>
+                                )
+                            }
                         })}
                     </TableRow>
                 ))}

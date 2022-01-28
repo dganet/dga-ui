@@ -9,20 +9,18 @@ export interface DatagridProps extends TableProps {
 
     data: {
         header: DataGridHeaderItems[],
-        body: DataGridRowItems[]
+        body: GridItem[]
     }
 }
 
 type DataGridHeaderItems = {
     label: string;
     width: number;
+    key: string;
 }
-type DataGridRowItems ={
-        rowId: string,
-        items: GridItem[]
-}
+
 type GridItem = {
-    label: string;
+    [x: string]: string;
 }
 
 
