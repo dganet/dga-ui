@@ -35,10 +35,11 @@ const DatagridComponent = ({
                 ))}
             </TableHeader>
             <TableBody>
-                {data.body.map((row, index) => (
+                {data.body?.map((row, index) => (
                     <TableRow rowClick={() => rowClick(row.id)} key={index}>
-                        {Object.keys(row).map((key, index) => {
-                            if (key !== 'id') {
+                        {Object.keys(row)
+                            .filter(element => element !== 'id')
+                            .map((key, index) => {
                                 return (
                                     <TableRowItem
                                         key={index}
@@ -47,8 +48,7 @@ const DatagridComponent = ({
                                         {row[data.header[index].key]}
                                     </TableRowItem>
                                 )
-                            }
-                        })}
+                            })}
                     </TableRow>
                 ))}
             </TableBody>

@@ -22,21 +22,24 @@ const PaginationComponent = ({
         for (let index = 1; index <= count; index++) {
             setPageList(prevState => [...prevState, index])
         }
-    }, [])
+    }, [count])
+
+    useEffect(() => {
+        onChange(currentPage)
+    }, [currentPage])
 
     const handlePrev = () => {
         if (currentPage > 1) {
             setCurrentPage(prevState => prevState - 1)
-            onChange(currentPage - 1)
         }
     }
 
     const handleNext = () => {
         if (currentPage < count) {
             setCurrentPage(prevState => prevState + 1)
-            onChange(currentPage + 1)
         }
     }
+
     return (
         <Container theme={theme}>
             <ActionButton theme={theme} onClick={handlePrev}>
@@ -44,9 +47,10 @@ const PaginationComponent = ({
             </ActionButton>
             {count <= 5 && (
                 <>
-                    {pageList.map(page => (
+                    {pageList.map((page, index) => (
                         <PaginationItem
                             theme={theme}
+                            key={index}
                             isActive={page === currentPage}
                             onClick={() => setCurrentPage(page)}
                         >
@@ -124,9 +128,10 @@ const PaginationComponent = ({
                         <>
                             {pageList
                                 .filter(element => element >= 2 && element <= 5)
-                                .map(page => (
+                                .map((page, index) => (
                                     <PaginationItem
                                         theme={theme}
+                                        key={index}
                                         isActive={page === currentPage}
                                         onClick={() => setCurrentPage(page)}
                                     >
@@ -147,7 +152,7 @@ const PaginationComponent = ({
 
                             <PaginationItem
                                 theme={theme}
-                                isActive={pageList[0] === currentPage}
+                                isActive={pageList[count - 1] === currentPage}
                                 onClick={() =>
                                     setCurrentPage(pageList[count - 1])
                                 }
@@ -159,9 +164,10 @@ const PaginationComponent = ({
                         <>
                             {pageList
                                 .filter(element => element >= count - 4)
-                                .map(page => (
+                                .map((page, index) => (
                                     <PaginationItem
                                         theme={theme}
+                                        key={index}
                                         isActive={page === currentPage}
                                         onClick={() => setCurrentPage(page)}
                                     >

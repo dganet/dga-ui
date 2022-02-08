@@ -7,4 +7,10 @@ export default {
     component: PaginationComponent
 }
 
-export const Default = () => <PaginationComponent count={10} />
+export const Default = () => (
+    <PaginationComponent
+        defaultPage={1}
+        onChange={id => console.log(id)}
+        count={10}
+    />
+)

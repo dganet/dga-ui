@@ -6,7 +6,7 @@ interface DropdownContainerItemStyleProps {
 export const Container = styled.div`
     width: 268px;
     height: 32px;
-    border: 1px solid ${props => props.theme.colors.neutral.soft};
+    border: 1px solid ${props => props.theme.colors.general[80]};
     border-radius: 4px;
     cursor: pointer;
 
@@ -24,7 +24,7 @@ export const Container = styled.div`
 export const DropdownContainerItem = styled.div<DropdownContainerItemStyleProps>`
     position: absolute;
     transform: translateY(62%);
-    border: 1px solid ${props => props.theme.colors.neutral.soft};
+    border: 1px solid ${props => props.theme.colors.general[80]};
     width: 100%;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -41,7 +41,7 @@ export const DropdownItem = styled.div`
     padding: 3px;
     cursor: pointer;
     &:hover {
-        background-color: ${props => props.theme.colors.neutral.light[300]};
+        background-color: ${props => props.theme.colors.general[40]};
     }
 `
 
@@ -50,6 +50,5 @@ export const DropdownTitle = styled.div`
 `
 
 export const DropdownLabel = styled.span`
-    color: ${props => props.theme.colors.neutral.dark};
-    ${props => props.theme.fontTokens[100]};
+    color: ${props => props.theme.colors.general[100]};
 `
