@@ -30,7 +30,7 @@ export const FloatContainerStyled = styled.div<DropdownMenuStyledProps>`
     display: flex;
     flex-direction: column;
     ${props => props.isOpen && css`
-        padding: 28px;
+        padding: 12px;
         height: auto;
         box-shadow: 0px 6px 24px rgba(38, 44, 71, 0.16);
     `}
@@ -48,12 +48,20 @@ export const FloatingItemStyled = styled.a`
     border-radius: 4px;
     color: ${props => props.theme.colors.general[80]};
     cursor: pointer;
+    &+&{
+        margin-top:4px;
+    }
     :active{
         background-color: red;
     }
     :hover{
         color: ${props => props.theme.colors.primary[100]};
         background-color: ${props => props.theme.colors.primary[30]};
+    }
+    svg{
+        margin:0px 8px;
+        height: 1.3rem;
+        width: 1.3rem;
     }
 
 `

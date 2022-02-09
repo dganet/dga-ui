@@ -7,6 +7,9 @@ import DataGrid from './components/Datagrid/DatagridComponent'
 import PaginationComponent from './components/Pagination/PaginationComponent'
 import Modal from  './components/Modal/ModalComponent'
 import {TabComponent as  Tab, TabPanel} from  './components/Tab/TabComponent'
+import Divider from './components/Divider/DividerComponent'
+import DropdownMenu, {FloatingItem} from './components/Dropdownmenu/DropdownmenuComponent'
+import DropDown from './components/Dropdown/DropdownComponent'
 /** Hooks */
 import { createTheme } from './lib/createTheme'
 import { useForm, FormStatus } from './hooks/useForm/index'
@@ -15,6 +18,10 @@ import { defaultTheme } from './styles/defaultTheme'
 import { CustomThemeProvider, useTheme } from './hooks/useTheme'
 
 export {
+    DropDown,
+    DropdownMenu,
+    FloatingItem,
+    Divider,
     Tab,
     TabPanel,
     Modal,
