@@ -13,13 +13,13 @@ export const Container = styled.div`
 export const FloatContainerStyled = styled.div<DropdownMenuStyledProps>`
     position: absolute;
     ${props => props.floatingSide === 'left' && css`
-        transform: translate(15%,60%);
+        transform: translate(15%,80%);
     `}
     ${props => props.floatingSide === 'right' && css`
-        transform: translate(-15%,60%);
+        transform: translate(-15%,80%);
     `}
     ${props => props.floatingSide === 'center' && css`
-        transform: translate(7.5%,60%);
+        transform: translate(7.5%,80%);
     `}
     width: 255px;
     border-radius: 6px;

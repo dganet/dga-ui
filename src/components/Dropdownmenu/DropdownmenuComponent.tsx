@@ -18,7 +18,7 @@ const DropdownmenuComponent = ({
     floatingSide,
     floatingItems
 }: DropdownmenuProps) => {
-    const [isOpen, setIsOpen] = React.useState(true)
+    const [isOpen, setIsOpen] = React.useState(false)
     const theme = useTheme()
     return (
         <Container>
