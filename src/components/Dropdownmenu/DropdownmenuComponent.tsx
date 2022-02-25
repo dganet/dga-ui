@@ -8,7 +8,8 @@ import {
 } from './DropdownmenuComponent.styles'
 import {
     DropdownmenuProps,
-    FloatingContainerTypes
+    FloatingContainerTypes,
+    FloatingItemTypes
 } from './DropdownmenuComponent.types'
 import { IoIosArrowDown, IoIosArrowUp, IoIosCafe } from 'react-icons/io'
 import { useTheme } from '../../hooks/useTheme/'
@@ -54,9 +55,16 @@ export const FloatingContainer: React.FC<FloatingContainerTypes> = ({
     )
 }
 
-export const FloatingItem: React.FC = ({ children }) => {
+export const FloatingItem: React.FC<FloatingItemTypes> = ({
+    children,
+    onClick
+}) => {
     const theme = useTheme()
-    return <FloatingItemStyled theme={theme}>{children}</FloatingItemStyled>
+    return (
+        <FloatingItemStyled onClick={onClick} theme={theme}>
+            {children}
+        </FloatingItemStyled>
+    )
 }
 
 export default DropdownmenuComponent

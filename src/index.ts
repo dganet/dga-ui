@@ -10,6 +10,7 @@ import {TabComponent as  Tab, TabPanel} from  './components/Tab/TabComponent'
 import Divider from './components/Divider/DividerComponent'
 import DropdownMenu, {FloatingItem} from './components/Dropdownmenu/DropdownmenuComponent'
 import DropDown from './components/Dropdown/DropdownComponent'
+import Avatar from './components/Avatar/AvatarComponent'
 /** Hooks */
 import { createTheme } from './lib/createTheme'
 import { useForm, FormStatus } from './hooks/useForm/index'
@@ -18,6 +19,7 @@ import { defaultTheme } from './styles/defaultTheme'
 import { CustomThemeProvider, useTheme } from './hooks/useTheme'
 
 export {
+    Avatar,
     DropDown,
     DropdownMenu,
     FloatingItem,

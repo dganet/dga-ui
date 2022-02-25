@@ -1,3 +1,5 @@
+import { BaseSyntheticEvent } from "react"
+
 export type FloatingSide = 'left' | 'right' | 'center'
 
 export type DropdownmenuProps = {
@@ -15,4 +17,8 @@ export type FloatingContainerTypes = {
 
     floatingSide: FloatingSide
     isOpen: boolean
+}
+
+export type FloatingItemTypes = {
+    onClick ?: () => void
 }

@@ -16,7 +16,9 @@ export const Default = () => (
                 <FloatingItem>
                     <AiOutlineHeart /> Menu Name
                 </FloatingItem>
-                <FloatingItem>Teste</FloatingItem>
+                <FloatingItem onClick={() => console.log('asdfasdf')}>
+                    Teste
+                </FloatingItem>
                 <FloatingItem>Teste</FloatingItem>
                 <FloatingItem>Teste</FloatingItem>
                 <Divider />
