@@ -5,9 +5,10 @@ export type DropdownProps = {
     selectedItem: DropdownItem
     setSelectedItem: any
     label?: string
+    size?: 'small' | 'medium' | 'large'
 }
 
 export type DropdownItem = {
-    id: number
+    id: string
     value: string
 }

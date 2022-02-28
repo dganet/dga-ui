@@ -17,6 +17,7 @@ import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
 const DropdownComponent = ({
     items = [],
     title,
+    size = 'small',
     multSelect = false,
     selectedItem,
     label,
@@ -36,10 +37,15 @@ const DropdownComponent = ({
 
     return (
         <>
-            <DropdownLabel theme={theme}>{label}</DropdownLabel>
-            <Container theme={theme} onClick={handleClick}>
+            <DropdownLabel theme={theme}>{title}</DropdownLabel>
+            <Container
+                theme={theme}
+                onClick={handleClick}
+                isOpen={open}
+                size={size}
+            >
                 <DropdownTitle theme={theme}>
-                    {selectedItem?.value ? selectedItem.value : title}
+                    {selectedItem?.value ? selectedItem.value : label}
                 </DropdownTitle>
                 {open ? (
                     <IoIosArrowUp title="arrow-up" />
@@ -47,7 +53,7 @@ const DropdownComponent = ({
                     <IoIosArrowDown title="arrow-down" />
                 )}
 
-                <DropdownContainerItem theme={theme} isOpen={open}>
+                <DropdownContainerItem theme={theme} isOpen={open} size={size}>
                     {items.map(item => (
                         <DropdownItem
                             theme={theme}

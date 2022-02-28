@@ -1,4 +1,4 @@
-import { TableProps } from "@components/Table/TableComponent.types";
+import { TableProps, TableSize, TableType } from "@components/Table/TableComponent.types";
 
 export interface DatagridProps extends TableProps {
     onChangePage ?: (page: number) => void;
@@ -6,6 +6,8 @@ export interface DatagridProps extends TableProps {
     pageAmount ?: number;
     defaultPage?: number;
     amountRegister?: number;
+    tableSize?: TableSize
+    tableType?: TableType
 
     data: {
         header: DataGridHeaderItems[],

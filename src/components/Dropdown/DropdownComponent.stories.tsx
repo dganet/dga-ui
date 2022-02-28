@@ -10,23 +10,23 @@ export default {
 
 const customItems: DropdownItem[] = [
     {
-        id: 1,
+        id: '1',
         value: 'Teste1'
     },
     {
-        id: 2,
+        id: '2',
         value: 'Teste2'
     },
     {
-        id: 3,
+        id: '3',
         value: 'Teste3'
     },
     {
-        id: 4,
+        id: '4',
         value: 'Teste4'
     },
     {
-        id: 5,
+        id: '5',
         value: 'Teste5'
     }
 ]
@@ -36,8 +36,12 @@ export const Default = args => {
     return (
         <DropdownComponent
             {...args}
+            label="Dropdownlabel"
+            title="DropdownTitle"
+            size="small"
             selectedItem={selectedItem}
             setSelectedItem={setSelectedItem}
+            items={customItems}
         />
     )
 }
