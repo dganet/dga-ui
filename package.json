@@ -21,7 +21,9 @@
     "bootstrap:styles": "cd packages/styles && yarn",
     "bootstrap:web": "cd packages/web && yarn",
     "test": "jest",
-    "build": "rollup -c"
+    "publish:react": "cd packages/react && yarn publish",
+    "build": "rollup -c",
+    "release": "lerna publish"
   },
   "devDependencies": {
     "@dga-ui/eslint-config": "*",

@@ -7,7 +7,7 @@ import { terser } from 'rollup-plugin-terser'
 const packageJson = require('./package.json')
 
 export default {
-    input: 'packages/react/src/index.ts',
+    input: './packages/react/src/index.ts',
     output: [
         {
             file: packageJson.main,
