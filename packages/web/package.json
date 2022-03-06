@@ -5,5 +5,6 @@
   "license": "MIT",
   "dependencies": {
     "@stitches/react": "^1.2.7"
-  }
+  },
+  "gitHead": "72099bc7f4f49dd02df7df622ceaa8fbb41a49a2"
 }
