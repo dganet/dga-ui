@@ -1,87 +1,41 @@
 {
-    "name": "dga-ui",
-    "version": "0.1.29",
-    "main": "build/index.js",
-    "types": "build/src/index.d.ts",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/dganet/dga-ui"
-    },
-    "license": "MIT",
-    "module": "build/index.es.js",
-    "files": [
-        "build"
-    ],
-    "scripts": {
-        "build": "rollup -c",
-        "generate": "yarn plop --plopfile generators/plopfile.js",
-        "storybook": "start-storybook -p 6006",
-        "storybook:export": "build-storybook",
-        "deploy-storybook": "storybook-to-ghpages",
-        "test": "jest",
-        "test:watch": "jest --watch",
-        "prepublishOnly": "npm run build",
-        "format": "prettier --write .",
-        "type-check": "tsc --pretty --noEmit"
-    },
-    "peerDependencies": {
-        "react": ">=16.8.0",
-        "react-dom": ">=16.8.0"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged",
-            "pre-push": "yarn run type-check"
-        }
-    },
-    "lint-staged": {
-        "*.@(ts|tsx)": [
-            "yarn format"
-        ]
-    },
-    "devDependencies": {
-        "@babel/core": "^7.15.5",
-        "@rollup/plugin-commonjs": "^20.0.0",
-        "@rollup/plugin-node-resolve": "^13.0.4",
-        "@storybook/addon-docs": "^6.3.12",
-        "@storybook/react": "^6.3.12",
-        "@storybook/storybook-deployer": "^2.8.10",
-        "@svgr/rollup": "^5.5.0",
-        "@testing-library/jest-dom": "^5.14.1",
-        "@testing-library/react": "^12.1.0",
-        "@testing-library/react-hooks": "^7.0.2",
-        "@types/axios": "^0.14.0",
-        "@types/jest": "^27.0.1",
-        "@types/react": "^17.0.20",
-        "@types/styled-components": "^5.1.14",
-        "@types/testing-library__jest-dom": "^5.14.1",
-        "@types/yup": "^0.29.13",
-        "babel-loader": "^8.2.2",
-        "babel-preset-react-app": "^10.0.0",
-        "identity-obj-proxy": "^3.0.0",
-        "jest": "^27.2.0",
-        "jest-styled-components": "^7.0.5",
-        "plop": "^2.7.4",
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
-        "rollup": "^2.56.3",
-        "rollup-plugin-analyzer": "^4.0.0",
-        "rollup-plugin-peer-deps-external": "^2.2.4",
-        "rollup-plugin-svg": "^2.0.0",
-        "rollup-plugin-terser": "^7.0.2",
-        "rollup-plugin-typescript2": "^0.30.0",
-        "storybook-addon-styled-component-theme": "^2.0.0",
-        "storybook-addon-styled-components-themes": "^0.0.2",
-        "ts-jest": "^27.0.5",
-        "ts-node": "^10.2.1",
-        "tsconfig-paths": "^3.12.0",
-        "typescript": "^4.4.3",
-        "yup": "^0.32.9"
-    },
-    "dependencies": {
-        "react-icons": "^4.3.1",
-        "react-spring": "^9.2.4",
-        "styled-components": "^5.3.1",
-        "uuidv4": "^6.2.12"
-    }
+  "name": "dga-ui",
+  "version": "0.1.29",
+  "license": "MIT",
+  "private": true,
+  "module": "build/index.es.js",
+  "main": "build/index.js",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dganet/dga-ui"
+  },
+  "scripts": {
+    "bootstrap": "yarn bootstrap:eslint && yarn bootstrap:react && yarn bootstrap:styles && yarn bootstrap:web ",
+    "bootstrap:eslint": "cd packages/eslint-config && yarn",
+    "bootstrap:react": "cd packages/react && yarn",
+    "bootstrap:styles": "cd packages/styles && yarn",
+    "bootstrap:web": "cd packages/web && yarn",
+    "test": "jest",
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@dga-ui/eslint-config": "*",
+    "@rollup/plugin-commonjs": "^21.0.2",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "rollup": "^2.56.3",
+    "rollup-plugin-analyzer": "^4.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-svg": "^2.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.6.2"
+  }
 }

@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<CardComponent /> should render the component 1`] = `
-<div
-  class="sc-bdfBQB ccoSRg"
->
-  test
-</div>
-`;

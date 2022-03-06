@@ -13,15 +13,8 @@
         "isolatedModules": true,
         "resolveJsonModule": true,
         "baseUrl": ".",
-        "paths": {
-            "@svg/*": ["./src/assets/svg/*"],
-            "@styles/*": ["./src/styles/*"],
-            "@lib/*": ["./src/lib/*"],
-            "@components/*": ["./src/components/*"],
-            "@hooks/*": ["./src/hooks/*"]
-        }
     },
-    "include": ["src/**/*", "./jest.setup.ts"],
+    "include": ["packages/**/*", "./jest.setup.ts"],
     "exclude": [
         "node_modules",
         "build",

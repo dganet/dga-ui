@@ -1,0 +1,78 @@
+
+import {createStitches} from  '@stitches/react'
+
+
+export const {
+    styled,
+    css,
+    globalCss,
+    keyframes,
+    getCssText,
+    theme,
+    createTheme,
+    config,
+  } = createStitches({
+    theme:{
+      colors: {
+          white: "#FFF",
+          general100: '#131523',
+          general90: '#333752',
+          general80: '#5A607F',
+          general70: '#7E84A3',
+          general60: '#A1A7C4',
+          general50: '#D7DBEC',
+          general40: '#E6E9F4',
+          general30: '#F5F6FA',
+          primary100: '#1E5EFF',
+          primary90: '#336DFF',
+          primary80: '#4F81FF',
+          primary70: '#608DFF',
+          primary60: '#89ABFF',
+          primary50: '#B6CBFF',
+          primary40: '#D9E4FF',
+          primary30: '#ECF2FF',
+          secondary100: '#6E0BD4',
+          secondary90: '#8125DF',
+          secondary80: '#9645E9',
+          secondary70: '#A75EF1',
+          secondary60: '#B97FF3',
+          secondary50: '#D8B1FF',
+          secondary40: '#E9D3FF',
+          secondary30: '#F4E9FE',
+          danger100: '#F0142F',
+          danger90: '#F12B43',
+          danger80: '#F34359',
+          danger70: '#F45A6D',
+          danger60: '#F8919D',
+          danger50: '#FAB3BC',
+          danger40: '#FCD5D9',
+          danger30: '#FDE7EA',
+          success100: '#06A561',
+          success90: '#1FD286',
+          success80: '#25E191',
+          success70: '#48E9A5',
+          success60: '#74EFB9',
+          success50: '#95F6CC',
+          success40: '#C4F8E2',
+          success30: '#DAF9EC',
+          warning100: '#F99600',
+          warning90: '#FFC700',
+          warning80: '#FFD613',
+          warning70: '#FFE45F',
+          warning60: '#FFE582',
+          warning50: '#FFECA3',
+          warning40: '#FFF4C9',
+          warning30: '#FFF9E1'
+      },
+      shadows: {
+        modal:"rgba(21,34,50,0.08)",
+      },
+      media :{
+          xl: '(min-width: 1200px)',
+          lg: '(min-width: 992px)',
+          md: '(min-width: 768px)',
+          sm: '(max-width: 600px)',
+          xs: '(max-width: 600px)'
+      },
+    }
+  });

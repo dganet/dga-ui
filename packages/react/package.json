@@ -1,0 +1,49 @@
+{
+  "name": "dga-ui",
+  "version": "0.1.29",
+  "main": "build/index.js",
+  "types": "build/src/index.d.ts",
+  "license": "MIT",
+  "module": "build/index.es.js",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "generate": "yarn plop --plopfile generators/plopfile.js",
+    "storybook": "start-storybook -p 6006",
+    "storybook:export": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepublishOnly": "npm run build",
+    "format": "prettier --write .",
+    "type-check": "tsc --pretty --noEmit",
+    "build-storybook": "build-storybook"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn run type-check"
+    }
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
+    "babel-loader": "^8.2.3"
+  }
+}
