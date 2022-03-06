@@ -1,6 +1,6 @@
 {
   "name": "@dga-ui/styles",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/index.ts",
   "license": "MIT",
   "gitHead": "72099bc7f4f49dd02df7df622ceaa8fbb41a49a2"
