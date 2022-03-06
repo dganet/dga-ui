@@ -1,9 +1,8 @@
 {
   "name": "@dga-ui/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": ".eslintrc.js.js",
   "license": "MIT",
-
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.7.0",
     "@typescript-eslint/parser": "^3.7.0",

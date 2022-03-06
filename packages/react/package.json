@@ -1,6 +1,6 @@
 {
   "name": "@dga-ui/react",
-  "version": "0.1.30",
+  "version": "0.1.31",
   "main": "build/index.js",
   "types": "build/src/index.d.ts",
   "license": "MIT",
