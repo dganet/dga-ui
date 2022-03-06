@@ -97,9 +97,12 @@ export const Container = styled.button<ButtonProps>`
         line-height: 20px;
         height: 20px;
         width: 20px;
+        cursor: pointer;
     }
     label{
-        margin-left: 4px
+        display: flex;
+        margin-left: 4px;
+        cursor: pointer;
     }
 
     ${props => props.onlyIcon && css`

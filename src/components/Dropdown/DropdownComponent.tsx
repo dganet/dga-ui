@@ -36,7 +36,7 @@ const DropdownComponent = ({
     }
 
     return (
-        <>
+        <div>
             <DropdownLabel theme={theme}>{title}</DropdownLabel>
             <Container
                 theme={theme}
@@ -65,7 +65,7 @@ const DropdownComponent = ({
                     ))}
                 </DropdownContainerItem>
             </Container>
-        </>
+        </div>
     )
 }
 export default DropdownComponent

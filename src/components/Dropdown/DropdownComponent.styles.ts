@@ -47,7 +47,7 @@ export const Container = styled.div<DropdownContainerItemStyleProps>`
 
 export const DropdownContainerItem = styled.div<DropdownContainerItemStyleProps>`
     position: absolute;
-    transform: translateY(64%);
+    transform: translateY(58%);
     background-color: ${props => props.theme.colors.white};
     width: 100%;
     border-bottom-left-radius: 4px;

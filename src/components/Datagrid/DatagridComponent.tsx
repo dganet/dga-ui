@@ -21,7 +21,8 @@ const DatagridComponent = ({
     pageAmount,
     defaultPage,
     amountRegister,
-    rowClick
+    rowClick,
+    hasFooter = false
 }: DatagridProps) => {
     const theme = useTheme()
 
@@ -52,16 +53,18 @@ const DatagridComponent = ({
                     </TableRow>
                 ))}
             </TableBody>
-            <TableFooter>
-                <PaginationComponent
-                    defaultPage={defaultPage}
-                    onChange={onChangePage}
-                    count={pageAmount}
-                />
-                <AmounRegisters theme={theme}>
-                    {amountRegister} registros
-                </AmounRegisters>
-            </TableFooter>
+            {hasFooter && (
+                <TableFooter>
+                    <PaginationComponent
+                        defaultPage={defaultPage}
+                        onChange={onChangePage}
+                        count={pageAmount}
+                    />
+                    <AmounRegisters theme={theme}>
+                        {amountRegister} registros
+                    </AmounRegisters>
+                </TableFooter>
+            )}
         </Table>
     )
 }

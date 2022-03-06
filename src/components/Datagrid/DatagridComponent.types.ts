@@ -8,7 +8,7 @@ export interface DatagridProps extends TableProps {
     amountRegister?: number;
     tableSize?: TableSize
     tableType?: TableType
-
+    hasFooter?: boolean
     data: {
         header: DataGridHeaderItems[],
         body: GridItem[]
@@ -22,7 +22,7 @@ type DataGridHeaderItems = {
 }
 
 type GridItem = {
-    [x: string]: string;
+    [x: string]: any;
 }
 
 
