@@ -5,14 +5,12 @@
   "author": "Guilherme Brito <guilhermebritto.prof@gmail.com>",
   "homepage": "https://github.com/dganet/dga-ui#readme",
   "license": "ISC",
-  "main": "src/index.ts",
-  "directories": {
-    "lib": "src",
-    "test": "__tests__"
-  },
   "files": [
-    "lib"
+    "build"
   ],
+  "main": "build/index.js",
+  "types": "build/src/index.d.ts",
+  "module": "build/index.es.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dganet/dga-ui.git"
