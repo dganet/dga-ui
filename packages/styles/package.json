@@ -22,5 +22,8 @@
   },
   "bugs": {
     "url": "https://github.com/dganet/dga-ui/issues"
+  },
+  "dependencies": {
+    "@dga-ds/tokens": "^0.0.4"
   }
 }

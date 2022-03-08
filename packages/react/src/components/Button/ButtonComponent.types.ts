@@ -6,4 +6,6 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     buttonType?: "primary" | "secondary" | "destructive" | "destructiveSecondary" | "white"
     onlyIcon?: boolean
     icon?: IconType
+    disabled?: boolean
+    children?: ReactNode
 }
