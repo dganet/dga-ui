@@ -1,6 +1,6 @@
 {
   "name": "@dga-ds/react",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "DGA-DS React",
   "author": "Guilherme Brito <guilhermebritto.prof@gmail.com>",
   "homepage": "https://github.com/dganet/dga-ui#readme",
@@ -43,7 +43,7 @@
     "typescript": "^4.6.2"
   },
   "dependencies": {
-    "@dga-ds/tokens": "^0.0.7",
+    "@dga-ds/tokens": "^0.0.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1"
