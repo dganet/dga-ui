@@ -21,6 +21,7 @@
     "compile": "rollup -c"
   },
   "types": "build/src/index.d.ts",
+  "module": "build/index.es.js",
   "main": "build/index.js",
   "bugs": {
     "url": "https://github.com/dganet/dga-ui/issues"
@@ -36,6 +37,7 @@
     "rollup": "^2.70.0",
     "rollup-plugin-analyzer": "^4.0.0",
     "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.31.2",
     "typescript": "^4.6.2"

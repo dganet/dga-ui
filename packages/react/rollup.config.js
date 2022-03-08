@@ -1,26 +1,33 @@
-import babel from '@rollup/plugin-babel';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external'
+import resolve from '@rollup/plugin-node-resolve'
+import commonjs from '@rollup/plugin-commonjs'
 import typescript from 'rollup-plugin-typescript2'
 import analyser from 'rollup-plugin-analyzer'
 import { terser } from 'rollup-plugin-terser'
-import commonjs from '@rollup/plugin-commonjs'
-import resolve from '@rollup/plugin-node-resolve'
+const packageJson = require('./package.json')
 
-
-const config = {
-  input: 'src/index.ts',
-  output: {
-    dir: 'build',
-    format: 'esm'
-  },
-  plugins: [        
-    analyser({
-      summaryOnly: true
-    }),
-    commonjs(),
-    terser(),
-    resolve({preferBuiltins: false}),
-    typescript({  useTsconfigDeclarationDir: true }),
-    babel({ babelHelpers: 'bundled' })]
-};
-
-export default config;
+export default {
+    input: 'src/index.ts',
+    output: [
+        {
+            file: packageJson.main,
+            format: 'cjs',
+            sourcemap: true
+        },
+        {
+            file: packageJson.module,
+            format: 'esm',
+            sourcemap: true
+        }
+    ],
+    plugins: [
+        peerDepsExternal(),
+        analyser({
+            summaryOnly: true
+        }),
+        terser(),
+        resolve({preferBuiltins: false}),
+        commonjs(),
+        typescript({  useTsconfigDeclarationDir: true })
+    ]
+}
