@@ -20,7 +20,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1",
     "compile": "rollup -c"
   },
-  "types": "build/src/index.d.ts",
+  "types": "build/index.d.ts",
   "module": "build/index.es.js",
   "main": "build/index.js",
   "bugs": {
