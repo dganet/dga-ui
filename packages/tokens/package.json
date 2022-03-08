@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/dganet/dga-ui/issues"
   },
-  "gitHead": "fdfffcd8867f1d62d32f85121e77cab4dd17f2e7"
+  "gitHead": "fdfffcd8867f1d62d32f85121e77cab4dd17f2e7",
+  "dependencies": {
+    "@stitches/react": "^1.2.7"
+  }
 }

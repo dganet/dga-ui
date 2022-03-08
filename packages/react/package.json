@@ -1,0 +1,41 @@
+{
+  "name": "@dga-ds/react",
+  "version": "0.0.3",
+  "description": "DGA-DS React",
+  "author": "Guilherme Brito <guilhermebritto.prof@gmail.com>",
+  "homepage": "https://github.com/dganet/dga-ui#readme",
+  "license": "ISC",
+  "main": "lib/react.js",
+  "directories": {
+    "lib": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dganet/dga-ui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "compile": "rollup -c"
+  },
+  "bugs": {
+    "url": "https://github.com/dganet/dga-ui/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@dga-ds/tokens": "^0.0.3",
+    "@rollup/plugin-babel": "^5.3.1",
+    "rollup": "^2.70.0",
+    "rollup-plugin-babel": "^4.4.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1"
+  }
+}
