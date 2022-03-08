@@ -31,5 +31,6 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1"
-  }
+  },
+  "gitHead": "c4c9ae0e9b849fd87f1bbb9ad1b87865bbe240e4"
 }
