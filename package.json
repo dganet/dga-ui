@@ -1,43 +1,7 @@
 {
-  "name": "dga-ui",
-  "version": "0.1.29",
-  "license": "MIT",
+  "name": "root",
   "private": true,
-  "module": "build/index.es.js",
-  "main": "build/index.js",
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dganet/dga-ui"
-  },
-  "scripts": {
-    "bootstrap": "yarn bootstrap:eslint && yarn bootstrap:react && yarn bootstrap:styles && yarn bootstrap:web ",
-    "bootstrap:eslint": "cd packages/eslint-config && yarn",
-    "bootstrap:react": "cd packages/react && yarn",
-    "bootstrap:styles": "cd packages/styles && yarn",
-    "bootstrap:web": "cd packages/web && yarn",
-    "test": "jest",
-    "publish:react": "cd packages/react && yarn publish",
-    "build": "rollup -c",
-    "release": "lerna publish"
-  },
   "devDependencies": {
-    "@dga-ui/eslint-config": "*",
-    "@rollup/plugin-commonjs": "^21.0.2",
-    "@rollup/plugin-node-resolve": "^13.1.3",
-    "@types/jest": "^27.4.1",
-    "jest": "^27.5.1",
-    "rollup": "^2.56.3",
-    "rollup-plugin-analyzer": "^4.0.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-svg": "^2.0.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.30.0",
-    "ts-jest": "^27.1.3",
-    "typescript": "^4.6.2"
+    "lerna": "^4.0.0"
   }
 }

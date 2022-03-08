@@ -1,22 +1,6 @@
 {
-  "npmClient": "yarn", 
-  "useWorkspaces": true,
   "packages": [
     "packages/*"
   ],
-  "version": "independent", 
-  "command": {
-    "publish": {
-      "ignoreChanges": ["ignored-file", "*.md"],
-      "message": "chore(release): publish",
-      "registry": "https://registry.npmjs.org"
-    },
-    "version": {
-      "allowBranch": ["master", "stiches"], 
-      "message": "chore(release): publicando versão",
-      "noCommitHooks": true,
-      "ignoreChanges": ["yarn.lock"],
-      "conventionalCommits": true
-    }
-  }
+  "version": "0.0.0"
 }
