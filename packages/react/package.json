@@ -5,10 +5,6 @@
   "author": "Guilherme Brito <guilhermebritto.prof@gmail.com>",
   "homepage": "https://github.com/dganet/dga-ui#readme",
   "license": "ISC",
-  "directories": {
-    "lib": "src",
-    "test": "__tests__"
-  },
   "files": [
     "build"
   ],
@@ -20,9 +16,9 @@
     "test": "echo \"Error: run tests from root\" && exit 1",
     "compile": "rollup -c"
   },
-  "types": "build/index.d.ts",
-  "module": "build/index.es.js",
   "main": "build/index.js",
+  "types": "build/src/index.d.ts",
+  "module": "build/index.es.js",
   "bugs": {
     "url": "https://github.com/dganet/dga-ui/issues"
   },
