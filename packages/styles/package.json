@@ -1,6 +1,6 @@
 {
   "name": "@dga-ds/styles",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "> TODO: description",
   "author": "Guilherme Brito <guilhermebritto.prof@gmail.com>",
   "homepage": "https://github.com/dganet/dga-ui#readme",
@@ -24,6 +24,6 @@
     "url": "https://github.com/dganet/dga-ui/issues"
   },
   "dependencies": {
-    "@dga-ds/tokens": "^0.0.4"
+    "@dga-ds/tokens": "^0.0.5"
   }
 }
