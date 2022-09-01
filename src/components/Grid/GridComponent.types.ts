@@ -25,6 +25,7 @@ export type ColProps = {
     md?: GridSize
     sm?: GridSize
     xs?: GridSize
+    children: ReactNode;
 }
 
 export type ColStyleProps = {

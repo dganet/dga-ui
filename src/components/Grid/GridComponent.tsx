@@ -25,7 +25,7 @@ const GridComponent = ({ colGap, rowGap, children }: GridProps) => {
     return <Container>{children}</Container>
 }
 
-const Row: React.FC<RowProps> = ({ children, centralize }) => {
+const Row = ({ children, centralize }: RowProps) => {
     const { rowGap } = useGrid()
     return (
         <StyledRow centralize={centralize} gap={rowGap}>
@@ -34,7 +34,7 @@ const Row: React.FC<RowProps> = ({ children, centralize }) => {
     )
 }
 
-const Col: React.FC<ColProps> = ({ children, lg, md, xl, sm, xs }) => {
+const Col = ({ children, lg, md, xl, sm, xs }: ColProps) => {
     const { colGap } = useGrid()
     return (
         <StyledCol gap={colGap} xs={xs} sm={sm} md={md} lg={lg} xl={xl}>
